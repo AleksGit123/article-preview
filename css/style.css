@@ -1,0 +1,93 @@
+.main_tag {
+    background-color: #ECF2F8;
+    margin: auto;
+    min-height: 100vh;
+    width: min(100%, 2000px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section {
+    display: flex;
+    width: min(90%, 700px);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 20px -1px;
+}
+
+.drawer_image {
+    width: 252px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text_section {
+    padding: 26px 32.500px;
+}
+
+.section_heading {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: normal;
+    color: #48556A;
+}
+
+.section_p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    color: #9eafc2;
+    margin-block: 13px 26px;
+}
+
+.user_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal_info {
+    display: flex;
+    column-gap: 20px;
+}
+
+.avatar_image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: normal;
+    color: #48556A;
+    text-wrap: nowrap;
+}
+
+.date {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    color: #9eafc2;
+}
+
+.share_btn {
+    background-color: #ecf2f8;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.share {
+    font-size: 20px;
+}
