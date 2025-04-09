@@ -94,7 +94,7 @@
     justify-content: space-between;
     /* column-gap: 30px; */
     right: -60px;
-    bottom: 35%;
+    bottom: 27%;
     padding: 13px 26px;
     opacity: 0;
     z-index: 1;
@@ -128,6 +128,7 @@
 
 .share_btn2 {
     display: none;
+    background-color: #6e8098;
 }
 
 
