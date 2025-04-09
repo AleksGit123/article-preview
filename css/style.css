@@ -10,27 +10,30 @@
 
 .main_section {
     display: flex;
+    /* flex-direction: column; */
     width: min(90%, 700px);
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #FFFFFF;
     box-shadow: 0 5px 20px -1px;
+    position: relative;
 }
 
 .drawer_image {
     width: 252px;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px 0 0 10px;
 }
 
 .text_section {
-    padding: 26px 32.500px;
+    padding: 20px 32.500px;
 }
 
 .section_heading {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     font-style: normal;
     color: #48556A;
@@ -42,7 +45,7 @@
     line-height: 20px;
     font-size: 13px;
     color: #9eafc2;
-    margin-block: 13px 26px;
+    margin-block: 13px 45px;
 }
 
 .user_section {
@@ -80,14 +83,122 @@
     color: #9eafc2;
 }
 
-.share_btn {
+
+
+.soc_media {
+    background-color: #48556a;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* column-gap: 30px; */
+    right: -60px;
+    bottom: 35%;
+    padding: 13px 26px;
+    opacity: 0;
+    z-index: 1;
+    display: none;
+}
+
+.links_div {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.icon_section {
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.same_button {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 40px;
+    height: 40px;
     background-color: #ecf2f8;
     border-radius: 50%;
     cursor: pointer;
     padding: 10px;
+    transition: .5s;
+}
 
+.share_btn2 {
+    display: none;
+}
+
+
+.share_btn:hover {
+    box-shadow: 0 5px 15px 1px #2a6350;
+}
+
+.mobile_style .icon_section {
+    column-gap: 20px;
+}
+
+
+
+.soc_media p {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #9eafc2;
+    letter-spacing: 5px;
+}
+
+.icon_section i {
+    font-size: 24px;
+}
+
+.arrow {
+    position: absolute;
+    /* background-color: red; */
+    top: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #48556a;
+    z-index: -1;
+}
+
+.appear {
+    animation: appear .5s 1 forwards;
+}
+
+.hide {
+    animation: hide .5s 1 forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        display: none;
+    }
+
+    to {
+        opacity: 1;
+        display: flex;
+    }
+}
+
+@keyframes hide {
+    from {
+        display: flex;
+        opacity: 1
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
 }
 
 .share {
     font-size: 20px;
+    color: #6e8098;
 }
